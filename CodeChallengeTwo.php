@@ -1,5 +1,7 @@
 <?php
-
+matrizpow();
+function matrizpow()
+{
 
 $ejeY = range(0, 3);
 
@@ -39,4 +41,4 @@ $html .= '</table>';
 ///
 
 echo $html;
-?>
+}
