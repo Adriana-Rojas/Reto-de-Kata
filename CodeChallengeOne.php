@@ -25,7 +25,6 @@ foreach ($ejesYX as $col_Y => $valores) {
     foreach ($valores as $val) {
         // Creamos los campos de los valores
         $html .= '<td>' . $val . '</td>';
-        $resultado = str_replace("6", " ", $val);
         echo "<script>console.log('ejesYX: " . $val . "' );</script>";
     }
     $reversed = array_reverse($valores);
