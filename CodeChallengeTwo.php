@@ -1,7 +1,5 @@
 <?php
-matrizpow();
-function matrizpow()
-{
+
 
 $ejeY = range(0, 3);
 
@@ -33,6 +31,9 @@ foreach ($ejesYX as $col_Y => $valores) {
     foreach ($valores as $val) {
         // Creamos los campos de los valores
         $valorescuadrado = pow($val, 2);
+        if($valorescuadrado>=66){
+            $valorescuadrado='   ';
+        }
         $html .= '<td>' . $valorescuadrado . '</td>';
     }
 }
@@ -41,4 +42,4 @@ $html .= '</table>';
 ///
 
 echo $html;
-}
+?>
